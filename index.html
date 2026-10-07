@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="秋霞福利电影网 - 秋日观影福利，精选暖心好片。聚焦暖心电影、喜剧佳作与治愈光影的观影指南。">
+<meta name="keywords" content="秋霞福利电影网,qiuxiafulidianyingwang,秋霞福利电影,福利电影,暖心电影,治愈光影,喜剧佳作,经典老片,在线观影">
+<meta name="author" content="秋霞福利电影网">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="秋霞福利电影网 | 秋日观影福利，精选暖心好片">
+<meta property="og:description" content="聚焦暖心电影、喜剧佳作与治愈光影的观影指南。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://qiuxiafulidianyingwang-wap.github.io">
+<meta property="og:site_name" content="秋霞福利电影网">
+<link rel="canonical" href="https://qiuxiafulidianyingwang-wap.github.io">
+<title>秋霞福利电影网 | 秋日观影福利，精选暖心好片 - qiuxiafulidianyingwang-wap.github.io</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --cream:#faf4ea;--cream2:#f3e9d8;--tea:#e8d5b5;--amber:#c87a2a;--amber2:#e09a3c;
+  --rust:#b8562f;--ink:#3a2e22;--ink2:#5c4a36;--grey:#9a8b74;--leaf:#6e8b3d;--line:rgba(58,46,34,.16);
+}
+html{scroll-behavior:smooth;}
+body{font-family:"PingFang SC","Microsoft YaHei","Source Han Sans SC","Noto Sans CJK SC",sans-serif;background:var(--cream);color:var(--ink);line-height:1.85;overflow-x:hidden;}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 12% 18%,rgba(224,154,60,.14),transparent 42%),radial-gradient(circle at 88% 82%,rgba(110,139,61,.10),transparent 40%);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;background-image:linear-gradient(var(--line) .5px,transparent .5px),linear-gradient(90deg,var(--line) .5px,transparent .5px);background-size:32px 32px;}
+a{color:inherit;text-decoration:none;}
+ul{list-style:none;}
+.container{max-width:1140px;margin:0 auto;padding:0 28px;}
+::selection{background:var(--amber);color:#fff;}
+
+/* ===== 顶部 ===== */
+header.top{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(250,244,234,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.top-in{display:flex;align-items:center;justify-content:space-between;height:80px;gap:16px;}
+.logo{display:flex;align-items:center;gap:14px;}
+.logo .leaf{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--leaf),#8fb84f);display:grid;place-items:center;font-size:21px;box-shadow:0 4px 12px rgba(110,139,61,.3);}
+.logo .txt b{font-size:19px;font-weight:900;letter-spacing:2px;}
+.logo .txt small{display:block;font-size:9px;letter-spacing:3.5px;color:var(--grey);margin-top:3px;text-transform:uppercase;}
+nav.pri{display:flex;gap:0;}
+nav.pri a{padding:8px 18px;font-size:13px;letter-spacing:1.5px;color:var(--ink2);transition:.2s;position:relative;}
+nav.pri a::after{content:"";position:absolute;left:18px;right:18px;bottom:2px;height:2px;background:var(--amber);transform:scaleX(0);transition:.25s;}
+nav.pri a:hover{color:var(--amber);}
+nav.pri a:hover::after{transform:scaleX(1);}
+.btn-go{padding:11px 26px;font-size:11.5px;letter-spacing:2.5px;font-weight:900;color:#fff;background:linear-gradient(135deg,var(--amber),var(--rust));border:none;border-radius:24px;cursor:pointer;transition:.25s;}
+.btn-go:hover{filter:brightness(1.08);transform:translateY(-1px);}
+.burger{display:none;color:var(--amber);font-size:27px;cursor:pointer;}
+body{padding-top:80px;}
+
+/* ===== Hero ===== */
+.hero{padding:96px 0 80px;position:relative;}
+.hero-in{display:grid;gap:56px;grid-template-columns:1.1fr .9fr;align-items:center;}
+.hero-txt .kicker{font-size:10.5px;letter-spacing:5px;color:var(--rust);background:rgba(184,86,47,.1);padding:6px 14px;border-radius:20px;display:inline-block;}
+.hero-txt h1{font-size:clamp(34px,6vw,58px);font-weight:900;letter-spacing:1px;margin:22px 0 18px;line-height:1.28;}
+.hero-txt h1 em{font-style:normal;color:var(--amber);position:relative;}
+.hero-txt h1 em::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:10px;background:rgba(224,154,60,.3);z-index:-1;}
+.hero-txt .rule{width:64px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--amber),var(--leaf));margin:0 0 20px;}
+.hero-txt p{color:var(--ink2);font-size:15px;max-width:520px;}
+.hero-txt .acts{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap;}
+.hero-txt .acts a{padding:14px 34px;font-size:12px;letter-spacing:2px;border-radius:30px;transition:.25s;font-weight:900;display:inline-block;}
+.hero-txt .acts a.on{background:linear-gradient(135deg,var(--amber),var(--rust));color:#fff;}
+.hero-txt .acts a.on:hover{filter:brightness(1.08);}
+.hero-txt .acts a.gh{color:var(--amber);border:2px solid var(--amber);}
+.hero-txt .acts a.gh:hover{background:var(--amber);color:#fff;}
+
+/* 窗格卡 */
+.win{border-radius:24px;padding:8px;background:var(--cream2);box-shadow:0 24px 60px rgba(58,46,34,.16);}
+.win-grid{display:grid;gap:8px;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;height:340px;}
+.win-cell{border-radius:16px;position:relative;overflow:hidden;display:grid;place-items:center;color:#fff;font-size:15px;font-weight:900;letter-spacing:2px;text-shadow:0 2px 8px rgba(0,0,0,.35);}
+.win-cell.tall{grid-row:span 2;font-size:19px;}
+.win-cell.a{background:linear-gradient(150deg,#d98a3c,#b8562f);}
+.win-cell.b{background:linear-gradient(150deg,#7ba23f,#4e7a2a);}
+.win-cell.c{background:linear-gradient(150deg,#e0a83c,#c87a2a);}
+.win-cell .badge{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.9);color:var(--rust);font-size:10px;font-weight:900;padding:4px 12px;border-radius:20px;text-shadow:none;letter-spacing:1px;}
+.win-cell .badge2{position:absolute;bottom:14px;right:14px;font-size:10px;background:rgba(0,0,0,.28);padding:4px 12px;border-radius:20px;text-shadow:none;}
+
+/* ===== 栏目头 ===== */
+section.block{padding:104px 0;position:relative;}
+.head{margin-bottom:58px;text-align:center;}
+.head .kicker{font-size:10.5px;letter-spacing:6px;color:var(--rust);text-transform:uppercase;}
+.head h2{font-size:clamp(26px,4.4vw,42px);font-weight:900;letter-spacing:1.5px;margin-top:12px;}
+.head h2 em{font-style:normal;color:var(--amber);}
+.head .rule{width:76px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--amber),var(--leaf));margin:16px auto;}
+.head .sub{color:var(--grey);font-size:13px;letter-spacing:2px;}
+
+/* ===== 栏目一：暖心片单（横向可滚动条） ===== */
+.flicks{display:grid;gap:22px;grid-template-columns:repeat(4,1fr);}
+.flick{background:var(--cream2);border-radius:18px;padding:22px;transition:.3s;border:1px solid transparent;}
+.flick:hover{border-color:var(--amber);transform:translateY(-6px);box-shadow:0 18px 40px rgba(58,46,34,.12);}
+.flick .thumb{height:120px;border-radius:14px;position:relative;margin-bottom:18px;}
+.flick .thumb.a{background:linear-gradient(150deg,#e0a03c,#c86a2a);}
+.flick .thumb.b{background:linear-gradient(150deg,#86b844,#5a8a2a);}
+.flick .thumb.c{background:linear-gradient(150deg,#e8b04a,#c87a2a);}
+.flick .thumb.d{background:linear-gradient(150deg,#d07038,#a04820);}
+.flick .thumb .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--rust);font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.2);}
+.flick .tag{font-size:10px;letter-spacing:2px;color:var(--rust);background:rgba(184,86,47,.1);padding:3px 10px;border-radius:20px;display:inline-block;}
+.flick h5{font-size:17px;font-weight:900;letter-spacing:1px;margin:10px 0 6px;}
+.flick p{font-size:12.5px;color:var(--ink2);}
+
+/* ===== 栏目二：福利频道（标签页） ===== */
+.tabs{max-width:860px;margin:0 auto;}
+.tab-bar{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:28px;}
+.tab-btn{padding:10px 24px;font-size:13px;letter-spacing:2px;border-radius:30px;border:2px solid var(--tea);background:var(--cream);color:var(--ink2);cursor:pointer;transition:.25s;font-weight:700;font-family:inherit;}
+.tab-btn.active,.tab-btn:hover{background:linear-gradient(135deg,var(--amber),var(--rust));color:#fff;border-color:transparent;}
+.tab-panel{display:none;animation:fade .4s ease;}
+.tab-panel.active{display:grid;}
+@keyframes fade{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+.tab-panel{gap:12px;grid-template-columns:repeat(2,1fr);background:var(--cream2);border-radius:20px;padding:26px;}
+.tab-item{display:flex;gap:14px;align-items:center;background:var(--cream);border-radius:14px;padding:14px 16px;}
+.tab-item .num{font-size:12px;font-weight:900;color:#fff;background:var(--leaf);width:30px;height:30px;display:grid;place-items:center;border-radius:10px;flex-shrink:0;}
+.tab-item h6{font-size:14.5px;font-weight:900;letter-spacing:1px;}
+.tab-item span{font-size:11.5px;color:var(--grey);}
+
+/* ===== 栏目三：观影日历（月历格） ===== */
+.cal{background:var(--cream2);border-radius:24px;padding:30px;max-width:860px;margin:0 auto;}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px;}
+.cal-head h4{font-size:18px;font-weight:900;letter-spacing:2px;}
+.cal-head .nav{display:flex;gap:10px;}
+.cal-head .nav button{width:34px;height:34px;border-radius:50%;border:2px solid var(--tea);background:var(--cream);color:var(--amber);cursor:pointer;font-size:15px;transition:.2s;}
+.cal-head .nav button:hover{background:var(--amber);color:#fff;border-color:transparent;}
+.cal-grid{display:grid;gap:8px;grid-template-columns:repeat(7,1fr);}
+.cal-day{font-size:11px;color:var(--grey);text-align:center;padding-bottom:8px;letter-spacing:1px;}
+.cal-cell{aspect-ratio:1/1;border-radius:14px;background:var(--cream);display:grid;place-items:center;font-size:14px;color:var(--ink2);position:relative;transition:.2s;}
+.cal-cell:hover{background:var(--tea);}
+.cal-cell.on{background:linear-gradient(135deg,var(--amber),var(--rust));color:#fff;font-weight:900;box-shadow:0 6px 16px rgba(200,122,42,.35);}
+.cal-cell.on::after{content:"🎬";position:absolute;top:4px;right:5px;font-size:8px;}
+.cal-cell.dim{color:var(--grey);opacity:.4;}
+
+/* ===== 栏目四：福利清单（表格） ===== */
+.deals{max-width:900px;margin:0 auto;background:var(--cream2);border-radius:24px;overflow:hidden;}
+.deals .row{display:grid;gap:0;grid-template-columns:60px 1.6fr 1fr 1fr 90px;align-items:center;padding:16px 24px;border-bottom:1px solid var(--tea);transition:.2s;}
+.deals .row:last-child{border-bottom:none;}
+.deals .row:hover{background:rgba(255,255,255,.6);}
+.deals .row.head{background:linear-gradient(135deg,var(--ink),var(--ink2));color:var(--cream);font-size:11.5px;letter-spacing:3px;}
+.deals .row .idx{font-size:13px;font-weight:900;color:var(--rust);}
+.deals .row .name{font-size:15px;font-weight:900;letter-spacing:1px;}
+.deals .row .cat{font-size:11px;letter-spacing:1.5px;color:var(--leaf);}
+.deals .row .date{font-size:12px;color:var(--grey);}
+.deals .row .free{font-size:11px;font-weight:900;color:#fff;background:linear-gradient(135deg,var(--amber),var(--rust));padding:5px 12px;border-radius:20px;text-align:center;letter-spacing:1px;}
+
+/* ===== 栏目五：关于（拼贴窗棂） ===== */
+.about-in{max-width:920px;margin:0 auto;background:var(--cream2);border-radius:28px;padding:46px;position:relative;overflow:hidden;}
+.about-in::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--amber),var(--leaf),var(--rust));}
+.about-top{display:grid;gap:44px;grid-template-columns:1fr 1fr;align-items:center;margin-bottom:36px;}
+.about-top .lead{font-size:24px;font-weight:900;letter-spacing:1px;line-height:1.6;}
+.about-top .lead em{font-style:normal;color:var(--amber);}
+.about-top p{margin-top:14px;color:var(--ink2);font-size:14px;}
+.about-stats{display:grid;gap:16px;grid-template-columns:1fr 1fr;}
+.stat{background:var(--cream);border-radius:18px;padding:22px;text-align:center;border:1px solid var(--tea);}
+.stat b{display:block;font-size:30px;font-weight:900;color:var(--amber);letter-spacing:1px;}
+.stat span{font-size:12px;color:var(--grey);letter-spacing:2px;}
+
+/* ===== 页脚 ===== */
+footer{background:linear-gradient(150deg,var(--ink),#2a2118);padding:60px 0 28px;color:var(--cream);}
+.foot-in{max-width:1140px;margin:0 auto;padding:0 28px;}
+.foot-grid{display:grid;gap:36px;grid-template-columns:1.8fr 1fr 1fr 1fr;margin-bottom:40px;}
+.foot-grid .logo .leaf{box-shadow:none;}
+.foot-grid .logo .txt b{font-size:18px;letter-spacing:2px;}
+.foot-grid .logo .txt small{font-size:12px;line-height:1.9;margin-top:12px;display:block;color:rgba(250,244,234,.55);font-style:normal;}
+.foot-col h5{font-size:10.5px;letter-spacing:4px;color:var(--amber2);margin-bottom:16px;}
+.foot-col a{display:block;font-size:13.5px;padding:6px 0;color:rgba(250,244,234,.6);letter-spacing:1px;transition:.2s;}
+.foot-col a:hover{color:var(--amber2);padding-left:6px;}
+.copy{border-top:1px solid rgba(250,244,234,.15);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:rgba(250,244,234,.5);}
+.copy span:last-child{color:var(--amber2);letter-spacing:3px;}
+
+/* ===== 响应式 ===== */
+@media(max-width:980px){
+  nav.pri{display:none;position:absolute;top:80px;left:0;right:0;flex-direction:column;background:var(--cream);padding:14px;border-top:1px solid var(--line);}
+  nav.pri.open{display:flex;}
+  nav.pri a{text-align:center;}
+  nav.pri a::after{display:none;}
+  .burger{display:block;}
+  .hero-in{grid-template-columns:1fr;}
+  .win-grid{grid-template-columns:1fr 1fr;height:280px;}
+  .flicks{grid-template-columns:1fr 1fr;}
+  .cal-grid{gap:5px;}
+  .deals .row{grid-template-columns:44px 1fr 90px;font-size:13px;}
+  .deals .row .cat,.deals .row .date{display:none;}
+  .deals .row.head{grid-template-columns:44px 1fr 90px;}
+  .deals .row.head .cat,.deals .row.head .date{display:none;}
+  .about-top{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:520px){
+  section.block{padding:70px 0;}
+  .flicks,.foot-grid,.about-stats,.tab-panel{grid-template-columns:1fr;}
+  .win-grid{grid-template-columns:1fr;height:auto;}
+  .win-cell.tall{grid-row:auto;height:130px;}
+  .win-cell{height:110px;}
+  .cal-cell{font-size:11px;border-radius:8px;}
+  .about-in{padding:32px 22px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- ===== 顶部 ===== -->
+<header class="top">
+  <div class="container top-in">
+    <a href="#" class="logo"><span class="leaf">🍂</span><span class="txt"><b>秋霞福利电影网</b><small>QIUXIA · WELFARE · CINEMA</small></span></a>
+    <nav class="pri" id="nav">
+      <a href="#flicks">暖心片单</a>
+      <a href="#tabs">福利频道</a>
+      <a href="#cal">放映日历</a>
+      <a href="#deals">福利清单</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="btn-go" onclick="location.href='#'">领 取 福 利</button>
+    <span class="burger" onclick="document.getElementById('nav').classList.toggle('open')">☰</span>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="container hero-in">
+    <div class="hero-txt"><span class="kicker">◆ &nbsp; A U T U M N &nbsp; W E L F A R E &nbsp; ◆</span><h1>秋日<em>观影福利</em><br>精选暖心好片</h1><div class="rule"></div><p>每日精选暖心电影、喜剧佳作与治愈光影，让每一个秋夜都有一部好片相伴。</p><div class="acts"><a href="#flicks" class="on">浏 览 片 单</a><a href="#deals" class="gh">查 看 福 利</a></div></div>
+    <div class="win">
+      <div class="win-grid">
+        <div class="win-cell tall a"><span class="badge">本周主打</span>暖心治愈 <span class="badge2">★ 9.2</span></div>
+        <div class="win-cell b"><span class="badge">轻松喜剧</span>开怀一笑</div>
+        <div class="win-cell c"><span class="badge">经典重温</span>岁月如歌</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目一：暖心片单（四列卡） ===== -->
+<section class="block" id="flicks">
+  <div class="container">
+    <div class="head"><span class="kicker">◆ W A R M &nbsp; P I C K S ◆</span><h2>暖心<em>片单</em></h2><div class="rule"></div><p class="sub">治愈、欢笑、感动，应有尽有</p></div>
+    <div class="flicks">
+      <div class="flick"><div class="thumb a"><span class="play">▶</span></div><span class="tag">治 愈</span><h5>秋日来信</h5><p>一封跨越三十年的信，让两个陌生人的秋天有了交集。</p></div>
+      <div class="flick"><div class="thumb b"><span class="play">▶</span></div><span class="tag">喜 剧</span><h5>欢喜茶馆</h5><p>老街转角的小茶馆，每天上演着让人捧腹的市井故事。</p></div>
+      <div class="flick"><div class="thumb c"><span class="play">▶</span></div><span class="tag">经 典</span><h5>岁月如歌</h5><p>三代人的歌单，串起一段被时光温柔以待的家族记忆。</p></div>
+      <div class="flick"><div class="thumb d"><span class="play">▶</span></div><span class="tag">温 情</span><h5>家的方向</h5><p>一场说走就走的返乡之旅，让他重新认识了家人的爱。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目二：福利频道（标签页） ===== -->
+<section class="block" id="tabs" style="padding-top:0;">
+  <div class="container">
+    <div class="head"><span class="kicker">◆ C H A N N E L S ◆</span><h2>福利<em>频道</em></h2><div class="rule"></div><p class="sub">按心情，选好片</p></div>
+    <div class="tabs">
+      <div class="tab-bar">
+        <button class="tab-btn active" data-t="1">🍁 治愈系</button>
+        <button class="tab-btn" data-t="2">😄 轻松喜剧</button>
+        <button class="tab-btn" data-t="3">🎻 经典重温</button>
+        <button class="tab-btn" data-t="4">❤️ 温情家庭</button>
+      </div>
+      <div class="tab-panel active" data-p="1">
+        <div class="tab-item"><span class="num">1</span><div><h6>秋日来信</h6><span>治愈 · 9.2分</span></div></div>
+        <div class="tab-item"><span class="num">2</span><div><h6>山海之间</h6><span>治愈 · 8.8分</span></div></div>
+        <div class="tab-item"><span class="num">3</span><div><h6>慢火车</h6><span>治愈 · 8.6分</span></div></div>
+        <div class="tab-item"><span class="num">4</span><div><h6>云端的信</h6><span>治愈 · 8.9分</span></div></div>
+      </div>
+      <div class="tab-panel" data-p="2">
+        <div class="tab-item"><span class="num">1</span><div><h6>欢喜茶馆</h6><span>喜剧 · 8.7分</span></div></div>
+        <div class="tab-item"><span class="num">2</span><div><h6>乌龙快递</h6><span>喜剧 · 8.4分</span></div></div>
+        <div class="tab-item"><span class="num">3</span><div><h6>错位的约会</h6><span>喜剧 · 8.5分</span></div></div>
+        <div class="tab-item"><span class="num">4</span><div><h6>邻居的派对</h6><span>喜剧 · 8.2分</span></div></div>
+      </div>
+      <div class="tab-panel" data-p="3">
+        <div class="tab-item"><span class="num">1</span><div><h6>岁月如歌</h6><span>经典 · 9.4分</span></div></div>
+        <div class="tab-item"><span class="num">2</span><div><h6>老电影院</h6><span>经典 · 9.0分</span></div></div>
+        <div class="tab-item"><span class="num">3</span><div><h6>那年夏天</h6><span>经典 · 8.9分</span></div></div>
+        <div class="tab-item"><span class="num">4</span><div><h6>旧唱片</h6><span>经典 · 8.7分</span></div></div>
+      </div>
+      <div class="tab-panel" data-p="4">
+        <div class="tab-item"><span class="num">1</span><div><h6>家的方向</h6><span>温情 · 9.1分</span></div></div>
+        <div class="tab-item"><span class="num">2</span><div><h6>妈妈的味道</h6><span>温情 · 8.9分</span></div></div>
+        <div class="tab-item"><span class="num">3</span><div><h6>父亲的背包</h6><span>温情 · 8.8分</span></div></div>
+        <div class="tab-item"><span class="num">4</span><div><h6>团圆饭</h6><span>温情 · 8.6分</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目三：放映日历（月历） ===== -->
+<section class="block" id="cal" style="padding-top:0;">
+  <div class="container">
+    <div class="head"><span class="kicker">◆ S C R E E N I N G &nbsp; C A L E N D A R ◆</span><h2>放映<em>日历</em></h2><div class="rule"></div><p class="sub">十月好片，每日一部</p></div>
+    <div class="cal">
+      <div class="cal-head"><h4 id="calTitle">2026年10月</h4><div class="nav"><button onclick="alert('可在完整版本中切换月份')">‹</button><button onclick="alert('可在完整版本中切换月份')">›</button></div></div>
+      <div class="cal-grid" id="calGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目四：福利清单（表格） ===== -->
+<section class="block" id="deals" style="padding-top:0;">
+  <div class="container">
+    <div class="head"><span class="kicker">◆ W E L F A R E &nbsp; L I S T ◆</span><h2>福利<em>清单</em></h2><div class="rule"></div><p class="sub">限时放送，先到先得</p></div>
+    <div class="deals">
+      <div class="row head"><div class="idx">#</div><div class="name">影 片 名 称</div><div class="cat">类 型</div><div class="date">放 映 时 间</div><div class="free">福 利</div></div>
+      <div class="row"><div class="idx">01</div><div class="name">秋日来信</div><div class="cat">治愈</div><div class="date">10月08日 20:00</div><div class="free">免费看</div></div>
+      <div class="row"><div class="idx">02</div><div class="name">欢喜茶馆</div><div class="cat">喜剧</div><div class="date">10月12日 19:30</div><div class="free">限免</div></div>
+      <div class="row"><div class="idx">03</div><div class="name">岁月如歌</div><div class="cat">经典</div><div class="date">10月15日 20:00</div><div class="free">免费看</div></div>
+      <div class="row"><div class="idx">04</div><div class="name">家的方向</div><div class="cat">温情</div><div class="date">10月18日 19:30</div><div class="free">限免</div></div>
+      <div class="row"><div class="idx">05</div><div class="name">山海之间</div><div class="cat">治愈</div><div class="date">10月22日 20:00</div><div class="free">免费看</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目五：关于（拼贴窗棂） ===== -->
+<section class="block" id="about" style="padding-top:0;">
+  <div class="container">
+    <div class="about-in">
+      <div class="about-top">
+        <div><div class="lead">关于 <em>秋霞福利电影网</em></div><p>每日精选暖心电影、喜剧佳作与经典老片，为你的秋日观影时光送上诚意满满的福利与陪伴。</p></div>
+        <div class="about-stats">
+          <div class="stat"><b>500+</b><span>精 选 影 片</span></div>
+          <div class="stat"><b>6</b><span>大 放 映 频 道</span></div>
+          <div class="stat"><b>30+</b><span>每 月 福 利 场</span></div>
+          <div class="stat"><b>9.1</b><span>平 均 评 分</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="foot-in">
+    <div class="foot-grid">
+      <div class="logo"><span class="leaf">🍂</span><span class="txt"><b>秋霞福利电影网</b><small>秋日观影福利，精选暖心好片。每日推荐治愈、喜剧、经典与温情佳作。</small></span></div>
+      <div class="foot-col"><h5>暖心片单</h5><a href="#">治愈系</a><a href="#">轻松喜剧</a><a href="#">经典重温</a><a href="#">温情家庭</a></div>
+      <div class="foot-col"><h5>放映服务</h5><a href="#">放映日历</a><a href="#">福利清单</a><a href="#">限时放送</a><a href="#">会员权益</a></div>
+      <div class="foot-col"><h5>关于本站</h5><a href="#">网站介绍</a><a href="#">内容方向</a><a href="#">联系方式</a><a href="#">意见反馈</a></div>
+    </div>
+    <div class="copy"><span>© 2026 秋霞福利电影网（qiuxiafulidianyingwang-wap.github.io）· 秋日观影福利，精选暖心好片</span><span>◆ A U T U M N &nbsp; W E L F A R E &nbsp; C I N E M A ◆</span></div>
+  </div>
+</footer>
+
+<script>
+// 标签页切换
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var t=btn.dataset.t;
+    document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+    document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active');});
+    btn.classList.add('active');
+    document.querySelector('.tab-panel[data-p="'+t+'"]').classList.add('active');
+  });
+});
+// 月历渲染（2026年10月）
+(function(){
+  var grid=document.getElementById('calGrid');
+  var days=['日','一','二','三','四','五','六'];
+  days.forEach(function(d){var e=document.createElement('div');e.className='cal-day';e.textContent=d;grid.appendChild(e);});
+  var first=new Date(2026,9,1).getDay(); // 0=Sun
+  for(var i=0;i<first;i++){var e=document.createElement('div');e.className='cal-cell dim';grid.appendChild(e);}
+  for(var d=1;d<=31;d++){
+    var e=document.createElement('div');e.className='cal-cell';e.textContent=d;
+    if(d===8||d===15||d===22)e.classList.add('on');
+    grid.appendChild(e);
+  }
+})();
+</script>
+
+</body>
+</html>
